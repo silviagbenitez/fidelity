@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+        <script src="assets/swiper/swiper-bundle.min.js"></script>
+        <title>Test</title>
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/header.png">
+                <img src="img/header_mb.png">
+            </picture>
+        </header>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner03.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section>
+            <div class="max-size">
+                <h2>PREMIOS DESTACADOS</h2>
+                <div class="prizes">
+                    <div class="card">
+                        <div class="product-01"></div>
+                        <h4>Certificado Playstation 20 USD</h4>
+                        <h4><b>787 puntos</b></h4>
+                        <div class="overlay">
+                            <button class="btn">CANJEA YA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="product-02"></div>
+                        <h4>Ck Be 200 ml EDT Caballero Calvin Klein</h4>
+                        <h4><b>2562 puntos</b></h4>
+                        <div class="overlay">
+                            <button class="btn">CANJEA YA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="product-03"></div>
+                        <h4>Certificado Playstation 20 USD</h4>
+                        <h4><b>1247 puntos</b></h4>
+                        <div class="overlay">
+                            <button class="btn">CANJEA YA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="max-size">
+                <div class="support">
+                    <img src="img/mobile-alt-solid.svg">
+                    <p>Centro de atención <br> 01 8000 42 3333 Opción 3</p>
+                </div>
+                <div class="legals">
+                    <p>Aviso de privacidad</p>
+                    <p>Términos y Condiciones</p>
+                    <div class="social">
+                        <img src="img/facebook.svg">
+                        <img src="img/twitter.svg">
+                        <img src="img/instragram.svg">
+                        <img src="img/youtube.svg">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+            });
+        </script>
+    </body>
+</html>
